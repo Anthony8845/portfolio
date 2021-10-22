@@ -53,6 +53,7 @@ h1, h2, h3, p {
 .container {
     padding: 0 15px;
     margin: 0 auto;
+    max-width: 1100px;
 }
 
 section {
@@ -64,3 +65,33 @@ section {
         padding: 0 40px;
     }
 }
+
+@media (min-width: 992px) {
+    .page__header {
+        width: 240px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .page {
+        background-image: linear-gradient(to right, #A1B7C8 24%, transparent 24%);
+    }
+    
+    .page__header {
+        width: 355px;
+        left: calc(50% - 720px);
+        
+        
+    }
+}
+
+
+@media (min-width: 2700px) {
+    .page {
+        background-image: linear-gradient(to right, #A1B7C8 30%, transparent 30%);
+    }
+}    
