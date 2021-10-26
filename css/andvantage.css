@@ -27,18 +27,23 @@
 .advantage__item_stack {
     background-image: url(../img/Group\ 22.svg);
 }
+
 .advantage__item_mockup {
     background-image: url(../img/Group\ 25.svg);
 }
+
 .advantage__item_inclusive {
     background-image: url(../img/Group\ 26.svg);
 }
+
 .advantage__item_adapt {
     background-image: url(../img/Group\ 27.svg);
 }
+
 .advantage__item_clear {
     background-image: url(../img/Group\ 24.svg);
 }
+
 .advantage__item_copyright {
     background-image: url(../img/Group\ 34.svg);
 }
@@ -47,22 +52,19 @@
     .advantage__title {
         font-size: 40px;
     }
-
     .advantage__item {
         font-size: 16px;
     }
-
     .advantage__list {
         gap: 40px;
     }
 }
-
+      
 @media (min-width: 768px) {
     .advantage__list {
         justify-content: space-between;
         gap: 80px;
     }
-
     .advantage__title {
         margin-bottom: 50px;
     }
@@ -72,11 +74,9 @@
     .advantage__list {
         gap: 100px;
     }
-    
     .advantage__item {
         font-size: 18px;
     }
-
     .advantage__title {
         font-size: 50px;
         margin-bottom: 80px;

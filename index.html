@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Портфолио</title>
+
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/index.js"></script>
 </head>
+
 <body class="page">
     <header class="page__header header">
         <div class="container header__container">
             <img class="header__logo" src="./img/logo.svg" alt="Логотип">
 
-                <address class="header__contacts contacts">
+            <address class="header__contacts contacts">
                     <ul class="contacts__list">
                         <li class="contacts__item">
                             <p class="contacts__head">Телефон</p>
@@ -42,7 +47,7 @@
                     </ul>
                 </address>
 
-                <button class="header__contacts-burger"></button>
+            <button class="header__contacts-burger"></button>
         </div>
     </header>
 
@@ -57,7 +62,7 @@
                         <h2 class="present__subtitle">Начинающий веб-разработчик</h2>
                     </hgroup>
 
-                    <p class="present__description">Привет, меня зовут Антон, я начинающий веб-разработчик</p> 
+                    <p class="present__description">Привет, меня зовут Антон, я начинающий веб-разработчик</p>
                     <button class="present__order-btn">Заказать</button>
                 </div>
             </div>
@@ -78,14 +83,37 @@
             </div>
         </section>
 
-
         <section class="portfolio">
             <div class="container">
                 <h2 class="portfolio__title">Портфолио</h2>
 
-                <div class="portfolio__slider">
-                    <ul class="portfolio__list">
-                        <li class="portfolio__item">
+                <div class="portfolio__slider swiper">
+                    <ul class="portfolio__list swiper-wrapper">
+                        <li class="portfolio__item swiper-slide">
+                            <article class="card">
+                                <img src="./img/Creatives.png" alt="" class="card__picture">
+
+                                <p class="card__data">
+                                    <span class="card__client">Клиент: Creatives</span>
+                                    <time class="card__date" datetime="2021">год: 2021</time>
+                                </p>
+
+                                <h3 class="card__title">Одностраничный сайт</h3>
+                            </article>
+                        </li>
+                        <li class="portfolio__item swiper-slide">
+                            <article class="card">
+                                <img src="" alt="картинка" class="card__picture">
+
+                                <p class="card__data">
+                                    <span class="card__client">Что то каво то</span>
+                                    <time class="card__date" datetime="2021"></time>
+                                </p>
+
+                                <h3 class="card__title">Заголовок проекта</h3>
+                            </article>
+                        </li>
+                        <li class="portfolio__item swiper-slide">
                             <article class="card">
                                 <img src="" alt="" class="card__picture">
 
@@ -97,7 +125,7 @@
                                 <h3 class="card__title">Заголовок проекта</h3>
                             </article>
                         </li>
-                        <li class="portfolio__item">
+                        <li class="portfolio__item swiper-slide">
                             <article class="card">
                                 <img src="" alt="" class="card__picture">
 
@@ -109,31 +137,7 @@
                                 <h3 class="card__title">Заголовок проекта</h3>
                             </article>
                         </li>
-                        <li class="portfolio__item">
-                            <article class="card">
-                                <img src="" alt="" class="card__picture">
-
-                                <p class="card__data">
-                                    <span class="card__client">Что то каво то</span>
-                                    <time class="card__date" datetime="2021"></time>
-                                </p>
-
-                                <h3 class="card__title">Заголовок проекта</h3>
-                            </article>
-                        </li>
-                        <li class="portfolio__item">
-                            <article class="card">
-                                <img src="" alt="" class="card__picture">
-
-                                <p class="card__data">
-                                    <span class="card__client">Что то каво то</span>
-                                    <time class="card__date" datetime="2021"></time>
-                                </p>
-
-                                <h3 class="card__title">Заголовок проекта</h3>
-                            </article>
-                        </li>
-                        <li class="portfolio__item">
+                        <li class="portfolio__item swiper-slide">
                             <article class="card">
                                 <img src="" alt="" class="card__picture">
 
@@ -146,10 +150,14 @@
                             </article>
                         </li>
                     </ul>
-                </div>   
+                    <button class="portfolio__arrow portfolio__arrow-left"></button>
+                    <button class="portfolio__arrow portfolio__arrow-right"></button>
+                </div>
             </div>
         </section>
 
     </main>
+
 </body>
+
 </html>
