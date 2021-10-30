@@ -21,3 +21,15 @@ new Swiper('.swiper', {
         
     },
 })
+
+$('.header__contacts-burger').click(function() {
+    $('.header__contacts').slideToggle();
+})
+
+$('.present__order-btn').click(() => {
+    $('.page__overlay_modal').fadeIn(300).css('display', 'flex')
+})
+
+$('.modal__close').click(() => {
+    $('.page__overlay_modal').fadeOut(200)
+})
