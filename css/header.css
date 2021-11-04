@@ -24,7 +24,9 @@ header {
 }
 
 .header__logo {
-    width: 124px;
+    width: 60px;
+    height: 60px;
+   
 }
 
 .header__contacts-burger {
@@ -96,11 +98,12 @@ header {
 @media (min-width: 768px) {
     .header {
         min-height: 100px;
-        padding: 28px 0;
+        padding: 20px 0;
     }
 
     .header__logo {
-        width: 180px;
+        width: 100px;
+        height: 100px;
     }
 
     .header__contacts {
@@ -120,7 +123,7 @@ header {
 
 @media (min-width: 992px) {
     .header {
-        padding: 50px 0;
+        padding: 40px 0;
     }
 
     .header__container {
