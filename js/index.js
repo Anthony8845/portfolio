@@ -22,9 +22,31 @@ new Swiper('.swiper', {
     },
 })
 
+
+function hideContacts() {
+    $('.header__contacts').slideUp();
+}
+
 $('.header__contacts-burger').click(function() {
     $('.header__contacts').slideToggle();
 })
+
+
+$(document).click(function(e) {
+    if (!(
+    ($(e.targer).parents('.header__conainer').length)
+    || ($(e.target).hasClass('header__container'))
+    || ($(e.target).hasClass('header__contacts-burger')))
+    ) {
+    
+    hideContacts();
+    }
+})
+
+// $(document).click(function() {
+//     if ($('.header__contacts').css('display', 'block'))
+//         $('.header__contacts').slideToggle();
+// })
 
 $('.present__order-btn').click(() => {
     $('.page__overlay_modal').fadeIn(300).css('display', 'flex')
