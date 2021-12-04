@@ -131,7 +131,8 @@ section {
 
 @media (min-width: 1440px) {
     .page {
-        background-image: linear-gradient(to right, #A1B7C8 24%, transparent 24%);
+        background-image: linear-gradient(to right,transparent 1%, mistyrose),
+        url(/img/bgimage.jpg) ;
     }
     
     .page__header {
