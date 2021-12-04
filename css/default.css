@@ -15,7 +15,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     color: #110303;
-    background-color: #fff;
+    background: rgb(226, 236, 220)
 }
 
 img {
@@ -131,8 +131,7 @@ section {
 
 @media (min-width: 1440px) {
     .page {
-        background-image: linear-gradient(to right,transparent 1%, mistyrose),
-        url(/img/bgimage.jpg) ;
+        background-image: linear-gradient(to right,rgb(17, 87, 21),transparent 50%);
     }
     
     .page__header {

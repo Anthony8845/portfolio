@@ -1,5 +1,5 @@
 header {
-    background: url(/img/bgimage.jpg) 50% 50% , no-repeat;
+    background: url(/img/bgimage.jpg) 10% 1% , no-repeat;
     min-height: 60px;
     padding-top: 13px;
     padding-bottom: 13px;
@@ -15,12 +15,13 @@ header {
 .header__contacts {
     display: none;
     position: absolute;
-    background: none;
+    background: #1f1d1d;
     top: 61px;
     left: 0;
     right: 0;
     padding: 30px 15px;
     color: #fff;
+    
 }
 
 .header__logo {
@@ -34,6 +35,7 @@ header {
     width: 27px;
     height: 14px;
     background-image: url(../img/menu.svg);
+    
 }
 
 
@@ -108,8 +110,7 @@ header {
 
     .header__contacts {
         top: 130px;
-        padding: 40px;
-        z-index: 1000;
+        padding: 40px;        
     }
 
     .contacts__list {
@@ -136,8 +137,9 @@ header {
 
     .header__contacts {
         position: static;
-        display: block;
+        display: flex;
         padding: 0;
+        z-index: 1000;
     }
 
     .contacts__list {
