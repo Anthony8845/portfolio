@@ -132,7 +132,7 @@ section {
 
 @media (min-width: 1440px) {
     .page {
-        background-image: linear-gradient(to right,rgb(17, 87, 21),transparent 50%);
+        background-image: linear-gradient(to right,rgb(42, 61, 40),transparent 50%);
     }
     
     .page__header {
@@ -148,6 +148,6 @@ section {
 
 @media (min-width: 2700px) {
     .page {
-        background-image: linear-gradient(to right, rgb(17, 87, 21) 30%, transparent 30%);
+        background-image: linear-gradient(to right, rgb(42, 61, 40) 30%, transparent 30%);
     }
 }    
