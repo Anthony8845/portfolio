@@ -35,7 +35,7 @@ $('.header__contacts-burger').click(function() {
 $(document).click(function(e) {
     if (!(
     ($(e.targer).parents('.header__conainer').length)
-    || ($(e.target).hasClass('header__container'))
+    || ($(e.target).hasClass('header__container').css('display', ''))
     || ($(e.target).hasClass('header__contacts-burger')))
     ) {
     
